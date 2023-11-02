@@ -8,5 +8,5 @@ def hides_account_number(account_number: str) -> str:
     return f"**{account_number[16:20]}"
 
 
-print(hides_card_number("7000792289606361"))
-print(hides_account_number("73654108430135874305"))
+#print(hides_card_number("7000792289606361"))
+#print(hides_account_number("73654108430135874305"))
