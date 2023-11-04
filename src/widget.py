@@ -18,16 +18,15 @@ def hide_the_account_or_card(account_or_card: str) -> str:
 
 def converts_date(date: str) -> str:
     """
-    принимает на вход строку, вида "2018-07-11T02:26:18.671407"
-    и возвращает строку с датой в виде "11.07.2018"
-    :param date:
-    :return:
+    Функция переформатирует дату
+    :param date: Дата для изменения
+    :return: Отформатированная дата
     """
     return f'{date[8:10]}.{date[5:7]}.{date[0:4]}'
 
 
-print(hide_the_account_or_card("Maestro Platinum Visa Gold 1596837868705199"))
-print(hide_the_account_or_card("Maestro 1596837868705199"))
-print(hide_the_account_or_card("Счет 64686473678894779589"))
-print(hide_the_account_or_card("Visa Classic 6831982476737658"))
-print(converts_date("2018-07-11T02:26:18.671407"))
+# print(hide_the_account_or_card("Maestro Platinum Visa Gold 1596837868705199"))
+# print(hide_the_account_or_card("Maestro 1596837868705199"))
+# print(hide_the_account_or_card("Счет 64686473678894779589"))
+# print(hide_the_account_or_card("Visa Classic 6831982476737658"))
+# print(converts_date("2018-07-11T02:26:18.671407"))
